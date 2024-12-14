@@ -163,7 +163,7 @@ class ResearchObject:
             bag_it_file.write("BagIt-Version: 0.97\n")
             bag_it_file.write(f"Tag-File-Character-Encoding: {ENCODING}\n")
 
-    def resolve_user(self) -> tuple[str, str]:
+    def resolve_user(self) -> Tuple[str, str]:
         """
         Provide a user provenance hook function.
 
@@ -216,7 +216,7 @@ class ResearchObject:
         # get their name wrong!)
         document.actedOnBehalfOf(account, user)
 
-    def resolve_host(self) -> tuple[str, str]:
+    def resolve_host(self) -> Tuple[str, str]:
         """
         Provide a host provenance hook function.
 
